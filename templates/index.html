@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Evaluación de Prácticas - IT</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 40px;">
+    <h2>Sistema de Gestión de Prácticas Profesionales</h2>
+    <form action="/procesar-evaluacion" method="POST">
+        <label>Nombre Completo:</label><br>
+        <input type="text" name="nombre" required style="margin-bottom: 10px; width: 300px;"><br>
+       
+        <label>Matrícula:</label><br>
+        <input type="text" name="matricula" required style="margin-bottom: 10px; width: 300px;"><br>
+       
+        <label>Promedio General (0.0 - 10.0):</label><br>
+        <input type="number" step="0.01" name="promedio" required style="margin-bottom: 10px; width: 300px;"><br>
+       
+        <label>Créditos Acumulados:</label><br>
+        <input type="number" name="creditos" required style="margin-bottom: 20px; width: 300px;"><br>
+       
+        <button type="submit" style="padding: 10px 20px; background-color: #003366; color: white; border: none;">Evaluar Solicitud</button>
+    </form>
+</body>
+</html>

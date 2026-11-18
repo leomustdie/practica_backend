@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Panel de ControlÁrea Protegida</title>
+<style> body { font-family: Arial, sans-serif; background: #f4f6f9;padding: 40px; }
+.box { background: white; padding: 30px; border-radius: 8px; max-width: 600px; margin: auto; border-left: 5px solid #1B4D3E; }
+a { color: #8B0000; text-decoration: none; font-weight: bold; }
+</style>
+</head>
+<body>
+<div class="box">
+<h1>¡Bienvenido, {{ usuario }}!</h1>
+<p>Esta pantalla solo es accesible para administradores.</p>
+<hr>
+<p><a href="/logout">Cerrar Sesión (Destruir Cookie de Sesión)</a></p>
+</div>
+</body>
+</html>
